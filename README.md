@@ -23,9 +23,5 @@ Update .env file in project root path
 yarn start
 ```
 
-[npm-image]: https://badge.fury.io/js/generator-test.svg
-[npm-url]: https://npmjs.org/package/generator-test
-[travis-image]: https://travis-ci.org/embbnux/generator-test.svg?branch=master
-[travis-url]: https://travis-ci.org/embbnux/generator-test
-[daviddm-image]: https://david-dm.org/embbnux/generator-test.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/embbnux/generator-test
+[npm-image]: https://badge.fury.io/js/generator-ringcentral-widgets.svg
+[npm-url]: https://npmjs.org/package/generator-ringcentral-widgets
