@@ -26,19 +26,19 @@ module.exports = class extends Generator {
       }
     );
     this.fs.copy(
-      this.templatePath('.babelrc'),
+      this.templatePath('babelrc.deafult'),
       this.destinationPath('.babelrc')
     );
     this.fs.copy(
-      this.templatePath('.env.default'),
+      this.templatePath('env.default'),
       this.destinationPath('.env')
     );
     this.fs.copy(
-      this.templatePath('.eslintrc'),
+      this.templatePath('eslintrc.default'),
       this.destinationPath('.eslintrc')
     );
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('gitignore.default'),
       this.destinationPath('.gitignore')
     );
     this.fs.copy(
