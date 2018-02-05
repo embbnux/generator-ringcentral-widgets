@@ -1,0 +1,23 @@
+{
+  "name": "generator-ringcentral-widgets",
+  "version": "0.0.1",
+  "description": "Generator of RingCentral Widgets App",
+  "files": [
+    "app"
+  ],
+  "main": "app/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "generator-ringcentral-widgets"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "embbnux",
+    "email": "embbnux@embbnux.com",
+    "url": "https://github.com/embbnux"
+  },
+  "homepage": "https://github.com/embbnux/generator-ringcentral-widgets"
+}
