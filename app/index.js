@@ -26,7 +26,7 @@ module.exports = class extends Generator {
       }
     );
     this.fs.copy(
-      this.templatePath('babelrc.deafult'),
+      this.templatePath('babelrc.default'),
       this.destinationPath('.babelrc')
     );
     this.fs.copy(
