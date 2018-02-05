@@ -61,6 +61,8 @@ export default function App({
                     params={routerProps.location.query}
                     regionSettingsUrl="/settings/region"
                     callingSettingsUrl="/settings/calling"
+                    showAudio={false}
+                    showFeedback={false}
                   />
                 )}
               />

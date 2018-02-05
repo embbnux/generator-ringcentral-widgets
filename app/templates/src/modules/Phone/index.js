@@ -9,14 +9,11 @@ import Alert from 'ringcentral-integration/modules/Alert';
 import Auth from 'ringcentral-integration/modules/Auth';
 import Brand from 'ringcentral-integration/modules/Brand';
 import AccountInfo from 'ringcentral-integration/modules/AccountInfo';
-import CallingSettings from 'ringcentral-integration/modules/CallingSettings';
 import ConnectivityMonitor from 'ringcentral-integration/modules/ConnectivityMonitor';
 import DateTimeFormat from 'ringcentral-integration/modules/DateTimeFormat';
 import DialingPlan from 'ringcentral-integration/modules/DialingPlan';
 import ExtensionInfo from 'ringcentral-integration/modules/ExtensionInfo';
-import ExtensionPhoneNumber from 'ringcentral-integration/modules/ExtensionPhoneNumber';
 import Environment from 'ringcentral-integration/modules/Environment';
-import ForwardingNumber from 'ringcentral-integration/modules/ForwardingNumber';
 import GlobalStorage from 'ringcentral-integration/modules/GlobalStorage';
 import Locale from 'ringcentral-integration/modules/Locale';
 import RolesAndPermissions from 'ringcentral-integration/modules/RolesAndPermissions';
@@ -48,12 +45,9 @@ import RouterInteraction from 'ringcentral-widgets/modules/RouterInteraction';
     { provide: 'Auth', useClass: Auth },
     { provide: 'AccountInfo', useClass: AccountInfo },
     { provide: 'Environment', useClass: Environment },
-    { provide: 'CallingSettings', useClass: CallingSettings },
     { provide: 'RegionSettings', useClass: RegionSettings },
     { provide: 'RolesAndPermissions', useClass: RolesAndPermissions },
-    { provide: 'ExtensionPhoneNumber', useClass: ExtensionPhoneNumber },
     { provide: 'ExtensionInfo', useClass: ExtensionInfo },
-    { provide: 'ForwardingNumber', useClass: ForwardingNumber },
     { provide: 'DialingPlan', useClass: DialingPlan },
     {
       provide: 'EnvironmentOptions',
@@ -135,7 +129,7 @@ export function createPhone({
         useValue: { name: brandConfig.appName, version: appVersion },
       },
       { provide: 'BrandOptions', useValue: brandConfig, spread: true },
-      { provide: 'ProxyFrameOAuthOptions', useValue: { redirectUri }, spread: true },
+      { provide: 'OAuthOptions', useValue: { redirectUri }, spread: true },
     ]
   })
   class Phone extends BasePhone {}
