@@ -80,7 +80,7 @@ $ yarn build
 
 * RingCentral Widgets depend on [React](https://github.com/facebook/react) and [RingCentral Commons](https://github.com/ringcentral/ringcentral-js-integration-commons).
 
-The genarated app project is built with [Webpack](https://webpack.js.org/).
+* The genarated app project is built with [Webpack](https://webpack.js.org/).
 
 [npm-image]: https://badge.fury.io/js/generator-ringcentral-widgets.svg
 [npm-url]: https://npmjs.org/package/generator-ringcentral-widgets
