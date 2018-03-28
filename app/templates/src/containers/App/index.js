@@ -62,6 +62,7 @@ export default function App({
                     regionSettingsUrl="/settings/region"
                     callingSettingsUrl="/settings/calling"
                     showAudio={false}
+                    showUserGuide={false}
                     showFeedback={false}
                   />
                 )}
@@ -69,10 +70,6 @@ export default function App({
               <Route
                 path="/settings/region"
                 component={RegionSettingsPage}
-              />
-              <Route
-                path="/settings/calling"
-                component={CallingSettingsPage}
               />
             </Route>
           </Route>

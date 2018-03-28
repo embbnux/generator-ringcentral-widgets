@@ -106,7 +106,7 @@ const config = {
             loader: 'sass-loader',
             options: {
               outputStyle: 'expanded',
-              includePaths: ['src', 'node_modules'],
+              includePaths: [buildPath],
             },
           }
         ],
